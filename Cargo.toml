@@ -1,0 +1,4 @@
+[package]
+name = "rustlog"
+version = "0.1.0"
+authors = ["wiguy <baekkevold@gmail.com>"]
