@@ -1,6 +1,7 @@
 //#![feature(phase)]  
 //#[phase(plugin, link)]extern crate log;  
 //#[phase(plugin, link)]extern crate time;  
+#[macro_use]
 extern crate log;
 extern crate time;
 /// import  
@@ -30,4 +31,13 @@ pub fn init() -> Result<(), SetLoggerError> {
 		max_log_level.set(LogLevelFilter::Info);
 		Box::new(CustomLogger)
 	})
+}
+
+#[test]
+fn test() {
+	warn!("warning");
+	debug!("debug");
+	//log!("log");
+	error!("error");
+	info!("info");
 }
