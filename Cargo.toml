@@ -2,3 +2,7 @@
 name = "rustlog"
 version = "0.1.0"
 authors = ["wiguy <baekkevold@gmail.com>"]
+
+[dependencies]
+time = "0.1.26"
+log = "0.3.1"
